@@ -70,7 +70,7 @@ Select the `type` of media (TV/Mov), the `Language` and the `Episode` (if there 
 	
 ![selectall](http://i.imgur.com/8rlXSPC.png)
 	
-Select your `resolution` & finally pick your encoding version
+Select your `resolution` & finally pick your `encoding version`
 	
 ![selectres](http://i.imgur.com/p1KCyzV.png)
 	
@@ -96,11 +96,11 @@ Just fire up your text editor, search for the pattern: `language= ` and add your
 ### Bugs & Improvements
 
 
-* [] Improve speed, this current version uses a lot of heavy-loading manual parsing and work on a database which I might need to find a way to get rid of in the future.
+- [ ] Improve speed, this current version uses a lot of heavy-loading manual parsing and work on a database which I might need to find a way to get rid of in the future.
 
-* [] Work on a GUI, which allows for quick and easy specs picking from outside the terminal.
+- [ ] Work on a GUI, which allows for quick and easy specs picking from outside the terminal.
 
-* [] ... Suggestions? 
+- [ ] ... Suggestions? 
 
 ### Contact me
 
