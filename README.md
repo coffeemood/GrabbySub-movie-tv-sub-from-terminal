@@ -29,7 +29,7 @@ Open terminal and type:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 	
-#### Download JQ & PUP
+#### Download `JQ` & `PUP`
 	
 ##### OS X 
 	
