@@ -7,7 +7,7 @@ With a few lines of text you will have gotten yourself the absolute right sub fo
 # Getting Started
 
 
-__Disclaimer:__ _Just a tit bit faster than downloading from Subscene, but a whole lot more convenient. 
+__Disclaimer:__ _Just a tit bit faster than downloading from Subscene, but a whole lot more convenient._ 
 
 
 ### Prerequisite
@@ -21,7 +21,7 @@ __Disclaimer:__ _Just a tit bit faster than downloading from Subscene, but a who
 
 We first needs to download a couple of stuffs first
 
-#### (OS X users only) Install `brew` 	
+#### Install `brew` (OS X users only) 
 	
 Open terminal and type: 
 	
@@ -64,19 +64,19 @@ Open up terminal, go to your desired directory, and just run `grabby`
 
 Type in your `show | movie` & select the correct season/version
 	
-	![selectmov](http://i.imgur.com/WqJcumd.png) 
+![selectmov](http://i.imgur.com/WqJcumd.png) 
 	
 Select the `type` of media (TV/Mov), the `Language` and the `Episode` (if there are any)
 	
-	![selectall](http://i.imgur.com/8rlXSPC.png)
+![selectall](http://i.imgur.com/8rlXSPC.png)
 	
 Select your `resolution` & finally pick your encoding version
 	
-	![selectres](http://i.imgur.com/p1KCyzV.png)
+![selectres](http://i.imgur.com/p1KCyzV.png)
 	
 And voila! :angel: :clap:
 	
-	![download](http://i.imgur.com/V4McI26.png)
+![download](http://i.imgur.com/V4McI26.png)
 	
 	
 ### Adding Languages & Encoding Version 
@@ -96,9 +96,11 @@ Just fire up your text editor, search for the pattern: `language= ` and add your
 ### Bugs & Improvements
 
 
-[] Improve speed, this current version uses a lot of heavy-loading manual parsing and work on a database which I might need to find a way to get rid of in the future.
-[] Work on a GUI, which allows for quick and easy specs picking from outside the terminal.
-[] ... Suggestions? 
+* [] Improve speed, this current version uses a lot of heavy-loading manual parsing and work on a database which I might need to find a way to get rid of in the future.
+
+* [] Work on a GUI, which allows for quick and easy specs picking from outside the terminal.
+
+* [] ... Suggestions? 
 
 ### Contact me
 
