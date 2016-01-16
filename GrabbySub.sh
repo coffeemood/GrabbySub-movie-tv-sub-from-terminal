@@ -110,7 +110,9 @@ do
 					echo "Now select your episode... "
 					select ep in ${episodes[@]};
 					do
-						{
+						if (($ep < 10))
+						then 
+							{
 							echo "Now select your resolution"
 							select res in ${resolution[@]};
 							do
@@ -141,7 +143,41 @@ do
 
 								}
 							done
-						}
+							}
+						else
+							{
+							echo "Now select your resolution"
+							select res in ${resolution[@]};
+							do
+								{
+									case $res in 
+										"480p"|"720p"|"1080p")
+											select ver in $(less $dbfile | grep $line | grep -e "E$ep" | grep "$res");
+											do
+												{
+													
+													download=$(echo $ver |tr '+' '\n' | grep /subtitles)
+													mrdownloader $download
+													exit 0 
+												}
+											done ;;
+										
+										"OTHER")
+											select ver in $(less $dbfile | grep $line | grep -e "E$ep" );
+											do
+												{
+													
+													download=$(echo $ver |tr '+' '\n' | grep /subtitles)
+													mrdownloader $download
+													exit 0
+												}
+											done  ;;
+									esac
+
+								}
+							done
+							}
+						fi
 					done
 				}
 				done 
@@ -186,7 +222,7 @@ mrdownloader ()
 		{
 			url_followed="http://subscene.com/$choice"
 			curl -s -L $url_followed | pup 'tr td[class="a1"] a json{}' > choice.txt
-			maxep=$(curl -s -L $url_followed | pup 'td[class="a1"] a span text{}' | head -n 5 | egrep -o "E[[:digit:]][[:digit:]]" | tr 'E' ' ')
+			maxep=$(curl -s -L $url_followed | pup 'td[class="a1"] a span text{}' | grep -oE 'E[[:digit:]][[:digit:]]' | tr -d 'E' | sort -nr | head -n 1)
 			jsony choice.txt
 			exit 0 
 		}
